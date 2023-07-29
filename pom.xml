@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.codehunter</groupId>
-	<artifactId>debug-app</artifactId>
+	<artifactId>java-programs</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>java-programs</name>
 	<description>Java Programs</description>
