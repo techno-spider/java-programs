@@ -1,4 +1,4 @@
-package programs;
+package sample;
 
 public class Person {
     private String name;

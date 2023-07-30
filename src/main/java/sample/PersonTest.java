@@ -1,4 +1,4 @@
-package programs;
+package sample;
 
 import java.util.function.Function;
 
