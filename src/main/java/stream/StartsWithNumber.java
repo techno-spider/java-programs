@@ -16,3 +16,8 @@ public class StartsWithNumber {
         System.out.println("Numbers starts with 1: " + result);
     }
 }
+
+/*
+ * output:
+ * Numbers starts with 1: [14 , 17 , 11 ]
+ */

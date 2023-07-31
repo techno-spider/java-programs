@@ -9,8 +9,13 @@ public class SumAllNumbersInList {
         List<Integer> numbers = Arrays.asList(69, 83, 51, 77);
 
         int sum = numbers.stream()
-                         .mapToInt(Integer::intValue)
-                         .sum();
-        System.out.println("Sum is: "+sum);
+                .mapToInt(Integer::intValue)
+                .sum();
+        System.out.println("Sum is: " + sum);
     }
 }
+
+/*
+ * output:
+ * Sum is: 280
+ */

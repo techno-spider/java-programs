@@ -15,3 +15,11 @@ public class ConcateTwoStream {
         concatStream.forEach(System.out::println);
     }
 }
+
+/*
+ * output:
+ * Java 8
+ * Functional Interface
+ * Stream API
+ * Lambda Expression
+ */

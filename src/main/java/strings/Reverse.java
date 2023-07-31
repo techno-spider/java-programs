@@ -5,7 +5,7 @@ public class Reverse {
     public static void main(String[] args) {
 
         System.out.println("Reverse String: " + reverseString("my name is khan"));
-        System.out.println(reverseWord("my name is khan"));
+        System.out.println("Reverse Word: " + reverseWord("my name is khan"));
         System.out.println("Reverse Number: " + reverseNumber(1234));
     }
 
@@ -40,6 +40,6 @@ public class Reverse {
 /*
  * output:
  * Reverse String: nahk si eman ym
- * khan is name my
+ * Reverse Word: khan is name my
  * Reverse Number: 4321
  */

@@ -14,3 +14,9 @@ public class StartsWithChar {
                 .forEach(System.out::println);
     }
 }
+
+/*
+ * output:
+ * Language.
+ * love
+ */

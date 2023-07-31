@@ -9,10 +9,15 @@ public class NumberStartingWith {
         List<Integer> numList = Arrays.asList(25, 17, 94, 50, 11, 36, 15, 30);
 
         List<Integer> result = numList.stream()
-                                      .filter(num -> String.valueOf(num)
-                                                           .startsWith("3"))
-                                      .toList();
+                .filter(num -> String.valueOf(num)
+                        .startsWith("3"))
+                .toList();
         System.out.println(result);
 
     }
 }
+
+/*
+ * output:
+ * [36, 30]
+ */

@@ -14,7 +14,13 @@ public class GetDuplicates {
         Set<Integer> set = new HashSet<>();
 
         numbers.stream()
-               .filter(n -> !set.add(n))
-               .forEach(System.out::println);
+                .filter(n -> !set.add(n))
+                .forEach(System.out::println);
     }
 }
+/*
+ * output:
+ * 37
+ * 16
+ * 58
+ */

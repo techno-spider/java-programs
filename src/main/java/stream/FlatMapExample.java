@@ -13,3 +13,8 @@ public class FlatMapExample {
         System.out.println(flatmapList);
     }
 }
+
+/*
+ * output:
+ * [1, 2, 3, 4, 5, 6]
+ */

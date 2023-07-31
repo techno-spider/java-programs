@@ -14,3 +14,8 @@ public class StringReverse {
         }
     }
 }
+
+/*
+ * output:
+ * !dlroW ,olleH
+ */

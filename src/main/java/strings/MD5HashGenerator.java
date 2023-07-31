@@ -43,4 +43,8 @@ public class MD5HashGenerator {
     }
 }
 
-
+/*
+ * output:
+ * Input: HelloWorld123
+ * MD5 Hash: 624825620c7cdd818e697366727aa594
+ */

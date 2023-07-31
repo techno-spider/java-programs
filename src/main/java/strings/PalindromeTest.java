@@ -3,14 +3,11 @@ package strings;
 public class PalindromeTest {
     public static void main(String[] args) {
 
-        String str = "Naman";
-
-        System.out.println(isPalindrome(str));
-        System.out.println(isPalindrome("Madam"));
-        System.out.println(isPalindrome(1001));
+        System.out.println("Check Palindrome using for loop: " + isPalindromeStr("Naman"));
+        System.out.println("Check palindrome using Collection: " + isPalindrome("MaDAm"));
     }
 
-    static boolean isPalindrome1(String str) {
+    static boolean isPalindromeStr(String str) {
         String reversed = "";
         int len = str.length();
 
@@ -24,14 +21,10 @@ public class PalindromeTest {
         String reversed = new StringBuilder(str).reverse().toString();
         return str.equalsIgnoreCase(reversed);
     }
-
-    static boolean isPalindrome(int num) {
-        int reversed = 0;
-        while (num != 0) {
-            reversed = (reversed * 10) + (num % 10);
-            num /= 10;
-        }
-        return num == reversed;
-    }
-
 }
+
+/*
+ * output:
+ * Check Palindrome using for loop: true
+ * Check palindrome using Collection: true
+ */

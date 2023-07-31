@@ -17,3 +17,9 @@ public class MaxMinValue {
                 .get());
     }
 }
+
+/*
+ * output:
+ * Maximum number is: 95
+ * Minimum number is: 16
+ */

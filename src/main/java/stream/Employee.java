@@ -42,3 +42,9 @@ public class Employee {
                 .forEach(System.out::println);
     }
 }
+
+/*
+ * output:
+ * Employee [name: Alon, age: 29, email: alon@eg.com]
+ * Employee [name: Andrew, age: 32, email: andrew@eg.com]
+ */

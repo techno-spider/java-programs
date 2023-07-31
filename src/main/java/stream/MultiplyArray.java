@@ -11,3 +11,8 @@ public class MultiplyArray {
         System.out.println("Result: " + multiply);
     }
 }
+
+/*
+ * output:
+ * Result: 120
+ */

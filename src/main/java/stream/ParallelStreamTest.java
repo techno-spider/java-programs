@@ -7,7 +7,7 @@ public class ParallelStreamTest {
     public static void main(String[] args) {
 
         List<Integer> numList = new ArrayList<>();
-        for (int i = 1; i <= 1000000; i++) {
+        for (int i = 1; i <= 100000; i++) {
             numList.add(i);
         }
 
@@ -30,3 +30,11 @@ public class ParallelStreamTest {
         System.out.println("Execution time (ParallelStream): " + (endTime - startTime) + " milliseconds");
     }
 }
+
+/*
+ * output:
+ * Sum using Stream: 705082704
+ * Execution time (Stream): 17 milliseconds
+ * Sum using ParallelStream: 705082704
+ * Execution time (ParallelStream): 10 milliseconds
+ */

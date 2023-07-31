@@ -2,7 +2,7 @@ package strings;
 
 public class MatrixDiagonal {
     public static void main(String[] args) {
-        int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        int[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
         displayDiagonalElements(matrix);
     }
 
@@ -21,3 +21,11 @@ public class MatrixDiagonal {
         System.out.println();
     }
 }
+
+/*
+ * output:
+ * Diagonal Elements:
+ * 1
+ * 5
+ * 9
+ */

@@ -14,3 +14,11 @@ public class RemoveDuplicateString {
                 .forEach(System.out::println);
     }
 }
+
+/*
+ * output:
+ * Java
+ * SpringBoot
+ * Microservices
+ * Kafka
+ */
