@@ -18,3 +18,9 @@ public class StringRotation {
         return leftRotate(str, str.length() - i);
     }
 }
+
+/*
+ * output:
+ * Left(2 place) Rotation of 'abcde': cdeab
+ * Right(2 place) Rotation of 'abcde': deabc
+ */

@@ -15,3 +15,9 @@ public class SwapTwoNumbers {
         System.out.println("After a = " + a + ", b = " + b);
     }
 }
+
+/*
+ * output:
+ * Before a = 10, b = 20
+ * After a = 20, b = 10
+ */

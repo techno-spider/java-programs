@@ -4,8 +4,9 @@ public class Reverse {
 
     public static void main(String[] args) {
 
-        System.out.println(reverseString("my name is khan"));
-        System.out.println(reverseNumber(1234));
+        System.out.println("Reverse String: " + reverseString("my name is khan"));
+        System.out.println(reverseWord("my name is khan"));
+        System.out.println("Reverse Number: " + reverseNumber(1234));
     }
 
     static String reverseString(String str) {
@@ -35,3 +36,10 @@ public class Reverse {
         return reversed;
     }
 }
+
+/*
+ * output:
+ * Reverse String: nahk si eman ym
+ * khan is name my
+ * Reverse Number: 4321
+ */

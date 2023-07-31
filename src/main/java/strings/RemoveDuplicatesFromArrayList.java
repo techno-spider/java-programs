@@ -19,11 +19,19 @@ public class RemoveDuplicatesFromArrayList {
 
         HashSet<String> set = new HashSet<>(aList);
 
-        System.out.println("Size: " + aList.size());
+        System.out.println("Size of ArrayList: " + aList.size());
         aList.clear();
-        System.out.println("Size: " + aList.size());
+        System.out.println("Size of ArrayList: " + aList.size());
         aList.addAll(set);
-        System.out.println("Size: " + aList.size());
+        System.out.println("Size of ArrayList: " + aList.size());
         System.out.println(aList);
     }
 }
+
+/*
+ * output:
+ * Size of ArrayList: 8
+ * Size of ArrayList: 0
+ * Size of ArrayList: 5
+ * [spring, java, jpa, hibernate, springboot]
+ */

@@ -34,3 +34,9 @@ public class StringCompression {
         }
     }
 }
+
+/*
+ * output:
+ * Original String: aabbbbccdee
+ * Compressed String: a2b4c2d1e2
+ */
