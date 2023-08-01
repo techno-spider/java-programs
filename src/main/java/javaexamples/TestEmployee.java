@@ -20,9 +20,15 @@ public class TestEmployee {
         employeeList.add(new Employee("Dani", 23, 40000));
 
         List<Employee> result = employeeList.stream()
-                                            .filter(employee -> employee.getAge() > 27)
-                                            .filter(employee -> employee.getSalary() > 40000)
-                                            .toList();
+                .filter(employee -> employee.getAge() > 27)
+                .filter(employee -> employee.getSalary() > 40000)
+                .toList();
         result.forEach(System.out::println);
     }
 }
+
+/*
+ * output:
+ * Employee{name='Bob', age=29, salary=69000.0}
+ * Employee{name='Andrew', age=31, salary=71000.0}
+ */

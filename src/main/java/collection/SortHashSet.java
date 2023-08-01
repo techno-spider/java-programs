@@ -35,3 +35,11 @@ public class SortHashSet {
         System.out.println("TreeSet Sorted: " + sortedSet);
     }
 }
+
+/*
+ * output:
+ * HashSet Sort: [49, 67, 5, 38, 72, 88, 41, 13, 94]
+ * Stream Sorted: [5, 13, 38, 41, 49, 67, 72, 88, 94]
+ * ArrayList Sorted: [5, 13, 38, 41, 49, 67, 72, 88, 94]
+ * TreeSet Sorted: [5, 13, 38, 41, 49, 67, 72, 88, 94]
+ */

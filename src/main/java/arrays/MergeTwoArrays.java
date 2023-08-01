@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class MergeTwoArrays {
     public static void main(String[] args) {
 
-        int[] arr1 = {2, 4, 6};
-        int[] arr2 = {1, 3, 5};
+        int[] arr1 = { 2, 4, 6 };
+        int[] arr2 = { 1, 3, 5 };
 
         int aLen = arr1.length;
         int bLen = arr2.length;
@@ -19,3 +19,8 @@ public class MergeTwoArrays {
         System.out.println(Arrays.toString(mergedArray));
     }
 }
+
+/*
+ * output:
+ * [2, 4, 6, 1, 3, 5]
+ */

@@ -48,3 +48,11 @@ public class DistributedCache<K, V> {
         System.out.println("Value of key 'B': " + cache.get("B"));
     }
 }
+
+/*
+ * output:
+ * Cache size: 3
+ * Cache size: 3
+ * Value of key 'D': 4
+ * Value of key 'B': null
+ */

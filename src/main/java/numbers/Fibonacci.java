@@ -4,7 +4,7 @@ public class Fibonacci {
     public static void main(String[] args) {
 
         int n = 9;
-        System.out.println("The " + n + "th Fibonacci number is " + nthFibonacci(n));
+        System.out.println("The " + n + "th Fibonacci number is: " + nthFibonacci(n));
 
         fibonacciSequence(n);
     }
@@ -26,3 +26,17 @@ public class Fibonacci {
         }
     }
 }
+
+/*
+ * output:
+ * The 9th Fibonacci number is: 34
+ * 1
+ * 1
+ * 2
+ * 3
+ * 5
+ * 8
+ * 13
+ * 21
+ * 34
+ */

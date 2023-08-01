@@ -7,7 +7,8 @@ public class ReverseLetter {
     public static void main(String[] args) {
         String str = "ab1c-d-k5q-mn77g";
 
-        System.out.println(reverseOnlyLetter(str));
+        System.out.println("Input String: " + str);
+        System.out.println("Output String: " + reverseOnlyLetter(str));
     }
 
     private static String reverseOnlyLetter(String str) {
@@ -31,3 +32,9 @@ public class ReverseLetter {
         return sb.toString();
     }
 }
+
+/*
+ * output:
+ * Input String: ab1c-d-k5q-mn77g
+ * Output String: gn1m-q-k5d-cb77a
+ */

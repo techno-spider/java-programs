@@ -23,3 +23,9 @@ public class HashMapIterationExample {
         }
     }
 }
+
+/*
+ * output:
+ * Key: one, Value: 1
+ * Key: three, Value: 3
+ */

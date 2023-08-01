@@ -26,3 +26,13 @@ public class GenericTest {
         System.out.println("Modified Boolean Value: " + boolObject.getData());
     }
 }
+
+/*
+ * output:
+ * Integer Value: 10
+ * String Value: Hello, Generics!
+ * Boolean Value: true
+ * Modified Integer Value: 20
+ * Modified String Value: Updated Value
+ * Modified Boolean Value: false
+ */

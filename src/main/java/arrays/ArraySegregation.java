@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ArraySegregation {
 
     public static void main(String[] args) {
-        int[] arr = {1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0};
+        int[] arr = { 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0 };
         System.out.println("Before segregation: " + Arrays.toString(arr));
         segregateZerosAndOnes(arr);
         System.out.println("After segregation: " + Arrays.toString(arr));
@@ -40,3 +40,9 @@ public class ArraySegregation {
         }
     }
 }
+
+/*
+ * output:
+ * Before segregation: [1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0]
+ * After segregation: [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1]
+ */

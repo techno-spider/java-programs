@@ -28,6 +28,16 @@ public class IteratorMapOfList {
 
         // Iterating map using forEach() in java 8
         listOfAnimals.forEach((key, value) -> System.out
-                .println("Categoty name: " + key + "\t\t" + "List of animals under the category: " + value));
+                .println("Category name: " + key + "\t\t" + "List of animals under the category: " + value));
     }
 }
+
+/*
+ * output:
+ * Category name: Reptiles List of animals under the category: [Lizard, Turtle,
+ * Crocodile, Python]
+ * Category name: Birds List of animals under the category: [Crow, Parrot,
+ * Peacock, Flamingo]
+ * Category name: Mammals List of animals under the category: [Dog, Cat, Monkey,
+ * Cow]
+ */

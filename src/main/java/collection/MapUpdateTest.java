@@ -22,3 +22,13 @@ public class MapUpdateTest {
         map.entrySet().iterator().forEachRemaining(System.out::println);
     }
 }
+
+/*
+ * output:
+ * Rocky Bhai=Yash
+ * Sivagami=Ramya
+ * Katappa=Sathyaraj
+ * Bahubali=Pravash
+ * Bhallaldev=Rana
+ * Devsena=Anushka
+ */

@@ -4,7 +4,7 @@ public class SecondHighestNumber {
     public static void main(String[] args) {
 
         int[] numbers = { 37, 10, 34, 19, 23, 45, 16, 22, 31 };
-        System.out.println(findSecondHighest(numbers));
+        System.out.println("Second Highest Number: " + findSecondHighest(numbers));
 
     }
 
@@ -23,3 +23,8 @@ public class SecondHighestNumber {
         return secondHighest;
     }
 }
+
+/*
+ * output:
+ * Second Highest Number: 37
+ */

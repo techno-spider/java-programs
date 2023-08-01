@@ -39,3 +39,15 @@ public class SortHashMapExample {
          */
     }
 }
+
+/*
+ * output:
+ * Carolina = 23
+ * John = 29
+ * Michael = 27
+ * Mike = 27
+ * Natalie = 25
+ * Scarlett = 28
+ * Sophia = 26
+ * Steve = 27
+ */

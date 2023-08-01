@@ -24,3 +24,11 @@ public class HashTableExample {
         System.out.println("HashCode: " + hashtable.hashCode());
     }
 }
+
+/*
+ * output:
+ * {8=mango, 6=grapes, 5=kiwi, 4=banana, 3=orange, 2=Apple, 1=Berry}
+ * Elements: {8=mango, 6=grapes, 5=kiwi, 4=banana, 3=orange, 2=Apple, 1=Berry}
+ * Size: 7
+ * HashCode: 886383818
+ */

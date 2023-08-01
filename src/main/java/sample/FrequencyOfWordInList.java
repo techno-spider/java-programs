@@ -14,6 +14,6 @@ public class FrequencyOfWordInList {
         Map<String, Long> wordCount = names.stream()
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
-        System.out.println("Words having count>=2: " + wordCount);
+        System.out.println("Words count: " + wordCount);
     }
 }

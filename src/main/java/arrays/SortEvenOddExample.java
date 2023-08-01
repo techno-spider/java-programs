@@ -1,8 +1,8 @@
 package arrays;
 
-public class SortOddEvenExample {
+public class SortEvenOddExample {
     public static void main(String[] args) {
-        int[] numbers = {36, 19, 5, 42, 15, 20, 17, 22, 13};
+        int[] numbers = { 36, 19, 5, 42, 15, 20, 17, 22, 13 };
         int[] sortedOrder = sortEvenOdd(numbers);
         // Print the sorted even odd numbers
         for (int num : sortedOrder) {
@@ -14,7 +14,7 @@ public class SortOddEvenExample {
         int[] sortedNumbers = new int[numbers.length];
         int evenIndex = 0;
         int oddIndex = numbers.length - 1;
-        //Traverse the number array
+        // Traverse the number array
         for (int num : numbers) {
             // If the number is even, place it at the beginning of the sortedNumbers array
             if (num % 2 == 0) {
@@ -30,3 +30,8 @@ public class SortOddEvenExample {
         return sortedNumbers;
     }
 }
+
+/*
+ * output:
+ * 36 42 20 22 13 17 15 5 19
+ */

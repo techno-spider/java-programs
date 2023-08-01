@@ -20,3 +20,8 @@ public class KthSmallestElement {
         return nums[k - 1];
     }
 }
+
+/*
+ * output:
+ * The 3th smallest element is: 21
+ */

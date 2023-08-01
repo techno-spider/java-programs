@@ -27,3 +27,8 @@ public class MoveZeroToEndExample {
         }
     }
 }
+
+/*
+ * output:
+ * [1, 2, 4, 9, 5, 0, 0, 0, 0]
+ */

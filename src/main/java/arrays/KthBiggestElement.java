@@ -19,3 +19,8 @@ public class KthBiggestElement {
         return nums[nums.length - k];
     }
 }
+
+/*
+ * output:
+ * The 3th biggest element is: 26
+ */
