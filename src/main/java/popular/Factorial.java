@@ -5,6 +5,8 @@ public class Factorial {
 
         System.out.println(getFactorial(7));
         System.out.println(getFactorial(3));
+
+        System.out.println(findFactorial(5));
     }
 
     static int getFactorial(int num) {
@@ -13,6 +15,14 @@ public class Factorial {
             factorial *= i;
         }
         return factorial;
+    }
+
+    // using recursion
+    static long findFactorial(long num) {
+        if (num == 1)
+            return 1;
+        else
+            return (num * findFactorial(num - 1));
     }
 }
 
