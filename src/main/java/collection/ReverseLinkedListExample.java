@@ -31,4 +31,6 @@ public class ReverseLinkedListExample {
  * output:
  * Original list: [42, 27, 30]
  * Reverse List: [30, 27, 42]
+ * Original list: [java, springboot, hibernate]
+ * Reverse List: [hibernate, springboot, java]
  */
