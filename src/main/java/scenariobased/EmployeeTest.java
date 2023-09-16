@@ -1,9 +1,9 @@
-package javaexamples;
+package scenariobased;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestEmployee {
+public class EmployeeTest {
     public static void main(String[] args) {
 
         List<Employee> employeeList = new ArrayList<>();

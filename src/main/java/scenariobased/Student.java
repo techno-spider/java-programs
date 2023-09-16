@@ -1,4 +1,4 @@
-package xyz;
+package scenariobased;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,3 +49,9 @@ public class Student {
     }
 
 }
+
+/*
+ * output:
+ * Student [name=Katappa, age=25, branch=civil]
+ * Student [name=Kalkeya, age=23, branch=Mechanical]
+ */

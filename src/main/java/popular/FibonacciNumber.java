@@ -1,6 +1,6 @@
-package sample;
+package popular;
 
-public class FinonacciSeriesExample {
+public class FibonacciNumber {
     public static void main(String[] args) {
         int n = 10; // find the 10th fibonacci number
         System.out.println("The " + n + "th fibonacci number is: " + fibonacci(n));
@@ -14,3 +14,8 @@ public class FinonacciSeriesExample {
         }
     }
 }
+
+/*
+ * output:
+ * The 10th fibonacci number is: 55
+ */

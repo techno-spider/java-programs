@@ -1,6 +1,6 @@
-package numbers;
+package popular;
 
-public class Fibonacci {
+public class FibonacciUsingRecursion {
     public static void main(String[] args) {
 
         int n = 9;

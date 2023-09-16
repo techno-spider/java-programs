@@ -1,4 +1,4 @@
-package javaexamples;
+package scenariobased;
 
 public class Employee {
 

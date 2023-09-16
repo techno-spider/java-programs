@@ -2,7 +2,7 @@ package stream;
 
 import java.util.stream.Collectors;
 
-public class PrintDuplicateCharactersCount {
+public class DuplicateCharactersCount {
     public static void main(String[] args) {
 
         String str = "Java jakarta";
@@ -11,7 +11,7 @@ public class PrintDuplicateCharactersCount {
 
         str.chars()
                 .mapToObj((c) -> (char) c)
-                .filter(Character::isLetterOrDigit)
+                .filter(c -> Character.isLetterOrDigit((char) c))
                 .collect(Collectors.groupingBy(c -> c, Collectors.counting()))
                 .entrySet()
                 .stream()

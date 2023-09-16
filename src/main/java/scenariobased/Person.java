@@ -1,4 +1,4 @@
-package sample;
+package scenariobased;
 
 public class Person {
     private String name;

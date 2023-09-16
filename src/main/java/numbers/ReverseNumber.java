@@ -2,7 +2,7 @@ package numbers;
 
 public class ReverseNumber {
     public static void main(String[] args) {
-        System.out.println(numberReverse(123));
+        System.out.println(numberReverse(1234));
     }
 
     static int numberReverse(int num) {
@@ -14,3 +14,8 @@ public class ReverseNumber {
         return reversed;
     }
 }
+
+/*
+ * output:
+ * 4321
+ */

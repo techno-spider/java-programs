@@ -1,4 +1,4 @@
-package sample;
+package scenariobased;
 
 import java.util.function.Function;
 
