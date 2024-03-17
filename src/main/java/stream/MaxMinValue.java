@@ -2,6 +2,7 @@ package stream;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public class MaxMinValue {
     public static void main(String[] args) {
@@ -12,9 +13,11 @@ public class MaxMinValue {
                 .max(Integer::compare)
                 .get();
         System.out.println("Maximum number is: " + maxNum);
-        System.out.println("Minimum number is: " + numbers.stream()
+
+        int minNum = numbers.stream()
                 .min(Integer::compare)
-                .get());
+                .get();
+        System.out.println("Minimum number is: " + minNum);
     }
 }
 
