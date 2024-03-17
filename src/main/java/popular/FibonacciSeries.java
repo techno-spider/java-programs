@@ -11,14 +11,15 @@ public class FibonacciSeries {
         int first = 0, second = 1;
 
         if (n == 0) {
-            System.out.println("The Fibonacci series up to the 0th number is empty.");
+            System.out.println("The Fibonacci series up to the " + n + " number is: ");
+            System.out.println(first);
             return first;
         }
 
         if (n == 1) {
-            System.out.println("The Fibonacci series up to the 1st number is: ");
-            System.out.println(first);
-            return first;
+            System.out.println("The Fibonacci series up to the " + n + " number is: ");
+            System.out.println(first + ", " + second);
+            return second;
         }
 
         System.out.println("The Fibonacci series up to the " + n + " number is: ");
