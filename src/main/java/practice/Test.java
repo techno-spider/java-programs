@@ -1,32 +1,26 @@
 package practice;
 
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.IntStream;
+
 public class Test {
 
     public static void main(String[] args) {
 
-        int n = 8;
-        System.out.println("The " + n + " th fibonacci number is: " + fibonacci(n));
-    }
+        List<Integer> numList = List.of(14, 30, 55, 21, 29, 14, 39, 21, 39, 26, 32);
 
-    private static int fibonacci(int n) {
-        int first = 0, second = 1;
+        Set<Integer> set = new HashSet<>();
 
-        System.out.print("The Fibonacci series up to " + n + " th number is: ");
+        numList.stream()
+                .filter(num -> !set.add(num))
+                .forEach(System.out::println);
 
-        if (n == 0) {
-            System.out.println(first);
-            return first;
-        }
-
-        System.out.print(first);
-
-        for (int i = 2; i <= n; i++) {
-            int next = first + second;
-            System.out.print(", " + next);
-            first = second;
-            second = next;
-        }
-        System.out.println();
-        return second;
+        int factorial = IntStream.rangeClosed(1, 7)
+                .parallel()
+                .reduce((a, b) -> a * b)
+                .getAsInt();
+        System.out.println(factorial);
     }
 }

@@ -1,18 +1,18 @@
 package practice;
 
-import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collectors;
+import java.util.List;
+import java.util.stream.Stream;
 
 public class DemoExample {
     public static void main(String[] args) {
 
-        String str = "samsung";
+        List<String> names = List.of("John", "Steve", "Dave");
 
-        Map<Character, Long> charCount = str.chars()
-                                            .filter(ch -> ch != ' ' && ch != ',')
-                                            .mapToObj(ch -> (char) ch)
-                                            .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-        charCount.forEach((character,count)-> System.out.println(character+" : "+count));
+        names.stream()
+                .flatMap((name -> Stream.of(
+                        "Hello, " + name + "!",
+                        "How are you " + name + "?")))
+                .toList()
+                .forEach(System.out::println);
     }
 }

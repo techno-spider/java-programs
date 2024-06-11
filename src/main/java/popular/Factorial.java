@@ -30,4 +30,5 @@ public class Factorial {
  * output:
  * 5040
  * 6
+ * 120
  */

@@ -1,6 +1,5 @@
 package stream;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -16,11 +15,12 @@ public class CountOfEachCharacter {
         text.chars()
                 .filter(ch -> ch != ' ' && ch != ',')
                 .mapToObj(ch -> (char) ch)
-                .collect(Collectors.groupingBy(str -> str, LinkedHashMap::new, Collectors.counting()))
+                .collect(Collectors.groupingBy(str -> str, Collectors.counting()))
                 .forEach((c, count) -> System.out.println("Character: " + c + ", Count: " + count));
 
         System.out.println("Approach 2:");
         // approach 2
+        @SuppressWarnings("null")
         Map<Character, Long> charCount = sentence.chars()
                 .filter(ch -> ch != ' ')
                 .mapToObj(c -> (char) c)
