@@ -1,22 +1,21 @@
 package stream;
 
 import java.util.Arrays;
-import java.util.List;
 
 public class StartsWithChar {
     public static void main(String[] args) {
 
-        List<String> strList = List.of("java is a Object oriented programming Language. I love java.");
+        String str = "An empty vessel Makes much noise";
 
-        Arrays.stream(strList.get(0)
-                .split(" "))
-                .filter(word -> word.startsWith(String.valueOf('l')) || word.startsWith(String.valueOf('L')))
+        Arrays.stream(str.split(" "))
+                .filter(word -> word.startsWith("m") || word.startsWith("M"))
+                .toList()
                 .forEach(System.out::println);
     }
 }
 
 /*
  * output:
- * Language.
- * love
+ * Makes
+ * much
  */

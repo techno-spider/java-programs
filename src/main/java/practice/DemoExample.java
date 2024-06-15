@@ -1,18 +1,18 @@
 package practice;
 
+import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class DemoExample {
     public static void main(String[] args) {
 
-        List<String> names = List.of("John", "Steve", "Dave");
+        List<Integer> numbers = Arrays.asList(19, 19, 27, 19, 42, 42, 50, 95, 95, 31, 16, 79, 50, 31);
 
-        names.stream()
-                .flatMap((name -> Stream.of(
-                        "Hello, " + name + "!",
-                        "How are you " + name + "?")))
-                .toList()
-                .forEach(System.out::println);
+        List<Integer> result = numbers.stream()
+                .distinct()
+                .toList();
+
+        System.out.println(result);
+
     }
 }

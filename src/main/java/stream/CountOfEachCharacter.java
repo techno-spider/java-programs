@@ -10,17 +10,16 @@ public class CountOfEachCharacter {
         String text = "Hello, World!";
         String sentence = "Java programming language";
 
-        System.out.println("Approach 1:");
         // approach 1
+        System.out.println("Approach 1:");
         text.chars()
                 .filter(ch -> ch != ' ' && ch != ',')
                 .mapToObj(ch -> (char) ch)
                 .collect(Collectors.groupingBy(str -> str, Collectors.counting()))
                 .forEach((c, count) -> System.out.println("Character: " + c + ", Count: " + count));
 
-        System.out.println("Approach 2:");
         // approach 2
-        @SuppressWarnings("null")
+        System.out.println("Approach 2:");
         Map<Character, Long> charCount = sentence.chars()
                 .filter(ch -> ch != ' ')
                 .mapToObj(c -> (char) c)
