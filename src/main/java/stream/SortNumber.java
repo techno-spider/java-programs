@@ -25,6 +25,6 @@ public class SortNumber {
  * output:
  * Sorted in natural order:
  * 10 16 21 23 27 31 33 37 39 45 58
- * Sorted in natural order:
+ * Sorted in reverse order:
  * 58 45 39 37 33 31 27 23 21 16 10
  */
