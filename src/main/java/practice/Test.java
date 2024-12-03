@@ -1,26 +1,34 @@
 package practice;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.stream.IntStream;
+import java.util.stream.Collectors;
 
 public class Test {
-
     public static void main(String[] args) {
 
-        List<Integer> numList = List.of(14, 30, 55, 21, 29, 14, 39, 21, 39, 26, 32);
+        String str = "algo maverick";
 
-        Set<Integer> set = new HashSet<>();
+        str.chars()
+           .filter(ch -> ch != ' ' && ch != ',')
+           .map(Character::toLowerCase)
+           .mapToObj(i -> (char) i)
+           .collect(Collectors.groupingBy(s -> s, Collectors.counting()))
+           .forEach((k, v) -> System.out.println(k + " : " + v));
 
-        numList.stream()
-                .filter(num -> !set.add(num))
-                .forEach(System.out::println);
+        System.out.println(factorial(5));
+        System.out.println(getFactorial(5));
+    }
 
-        int factorial = IntStream.rangeClosed(1, 7)
-                .parallel()
-                .reduce((a, b) -> a * b)
-                .getAsInt();
-        System.out.println(factorial);
+    public static long factorial(long num) {
+        if (num <= 1)
+            return 1;
+        return (num * factorial(num - 1));
+    }
+
+    static int getFactorial(int n) {
+        int factorial = 1;
+        for (int i = 1; i <= n; i++) {
+            factorial *= i;
+        }
+        return factorial;
     }
 }

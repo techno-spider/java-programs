@@ -3,7 +3,9 @@ package strings;
 public class RemoveWhiteSpaceExample {
     public static void main(String[] args) {
 
-        System.out.println(removeWhiteSpace("string test"));
+        String str = "st    ring test";
+
+        System.out.println(removeWhiteSpace(str));
     }
 
     static String removeWhiteSpace(String input) {

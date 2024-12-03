@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Stack;
 
 public class DAGShortestPath {
-
     private static class Edge {
         int source;
         int destination;

@@ -2,7 +2,7 @@ package basic;
 
 // If a class has an entity reference, it is known as 'Aggregation'
 // 'Aggregation' represents HAS-A relationship
-// 'Aggregation' used for code reusability
+// 'Aggregation' used for code re-usability
 // In this example, 'Student' has an object of 'address', 'address' object contains its own information such as "city, state, country". In such a case the relationship is "Student HAS-A address"
 
 public class Student {

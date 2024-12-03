@@ -19,7 +19,9 @@ public class MapUpdateTest {
         // only modify if key doesn't exist in the map
         map.computeIfAbsent("Rocky Bhai", (value) -> "Yash");
 
-        map.entrySet().iterator().forEachRemaining(System.out::println);
+        map.entrySet()
+           .iterator()
+           .forEachRemaining(System.out::println);
     }
 }
 

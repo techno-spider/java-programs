@@ -4,9 +4,11 @@ public class Reverse {
 
     public static void main(String[] args) {
 
-        System.out.println("Reverse String: " + reverseString("my name is khan"));
-        System.out.println("Reverse Word: " + reverseWord("my name is khan"));
-        System.out.println("Reverse Number: " + reverseNumber(1234));
+        String str = "my name is khan";
+        System.out.println("Reverse String: " + reverseString(str));
+        System.out.println("Reverse Word: " + reverseWord(str));
+        int number = 12345;
+        System.out.println("Reverse Number: " + reverseNumber(number));
     }
 
     static String reverseString(String str) {
@@ -18,13 +20,15 @@ public class Reverse {
     }
 
     static String reverseWord(String str) {
-        String result = "";
-        String[] strArr = str.trim().split(" ");
+        StringBuilder result = new StringBuilder();
+        String[] strArr = str.trim()
+                             .split(" ");
 
         for (int i = strArr.length - 1; i >= 0; i--)
-            result += strArr[i] + " ";
+            result.append(strArr[i])
+                  .append(" ");
 
-        return result;
+        return result.toString();
     }
 
     static int reverseNumber(int num) {

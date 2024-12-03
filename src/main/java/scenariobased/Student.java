@@ -1,10 +1,10 @@
 package scenariobased;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @AllArgsConstructor
 @Getter
@@ -22,7 +22,7 @@ public class Student {
     public List<String> convertToUpperCase(List<String> names) {
 
         List<String> upNames = names.stream()
-                .map(name -> name.toUpperCase())
+                .map(String::toUpperCase)
                 .toList();
 
         return upNames;

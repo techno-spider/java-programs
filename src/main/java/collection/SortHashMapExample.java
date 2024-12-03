@@ -26,9 +26,9 @@ public class SortHashMapExample {
          */
 
         hashMap.entrySet()
-                .stream()
-                .sorted(Map.Entry.comparingByKey())
-                .forEach(entry -> System.out.println(entry.getKey() + " = " + entry.getValue()));
+               .stream()
+               .sorted(Map.Entry.comparingByKey())
+               .forEach(System.out::println);
 
         /*
          * hashMap.entrySet()

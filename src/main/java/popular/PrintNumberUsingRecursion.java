@@ -2,7 +2,7 @@ package popular;
 
 public class PrintNumberUsingRecursion {
     public static void main(String[] args) {
-        printNumbers(7);
+        printNumbers(20);
     }
 
     static void printNumbers(int num) {

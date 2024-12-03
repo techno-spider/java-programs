@@ -1,10 +1,7 @@
 package collection;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.TreeSet;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class SortHashSet {
     public static void main(String[] args) {
@@ -20,26 +17,33 @@ public class SortHashSet {
         set.add(13);
         set.add(49);
 
-        System.out.println("HashSet Sort: " + set);
+        Set<Integer> naturalSorting = set.stream()
+                                         .sorted()
+                                         .collect(Collectors.toCollection(LinkedHashSet::new));
+        System.out.println("HashSet Natural Sort: " + naturalSorting);
 
-        List<Integer> streamSorted = set.stream()
-                .sorted()
-                .toList();
-        System.out.println("Stream Sorted: " + streamSorted);
+        Set<Integer> reverseSorting = set.stream()
+                                         .sorted(Comparator.reverseOrder()) // reverse order
+                                         .collect(Collectors.toCollection(LinkedHashSet::new));
+        System.out.println("HashSet Reverse Sort: " + reverseSorting);
 
+        // collect in list
+        List<Integer> listSorted = set.stream()
+                                      .sorted()
+                                      .toList();
+        System.out.println("List Sorted: " + listSorted);
+
+        // collect in ArrayList
         ArrayList<Integer> arrayList = new ArrayList<>(set);
         Collections.sort(arrayList);
         System.out.println("ArrayList Sorted: " + arrayList);
-
-        TreeSet<Integer> sortedSet = new TreeSet<>(set);
-        System.out.println("TreeSet Sorted: " + sortedSet);
     }
 }
 
 /*
  * output:
- * HashSet Sort: [49, 67, 5, 38, 72, 88, 41, 13, 94]
- * Stream Sorted: [5, 13, 38, 41, 49, 67, 72, 88, 94]
+ * HashSet Natural Sort: [5, 13, 38, 41, 49, 67, 72, 88, 94]
+ * HashSet Reverse Sort: [94, 88, 72, 67, 49, 41, 38, 13, 5]
+ * List Sorted: [5, 13, 38, 41, 49, 67, 72, 88, 94]
  * ArrayList Sorted: [5, 13, 38, 41, 49, 67, 72, 88, 94]
- * TreeSet Sorted: [5, 13, 38, 41, 49, 67, 72, 88, 94]
  */
