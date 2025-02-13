@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ComparableComparatorTest {
+public class PersonTest {
     public static void main(String[] args) {
 
         List<Person> persons = new ArrayList<>();

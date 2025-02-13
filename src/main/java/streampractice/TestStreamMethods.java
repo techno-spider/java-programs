@@ -20,6 +20,5 @@ public class TestStreamMethods {
                                                                && e.getSalary() > 75000)
                                                   .collect(Collectors.toMap(Employee::getName, Employee::getSalary));
         System.out.println(empFromDev);
-
     }
 }

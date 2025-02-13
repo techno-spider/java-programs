@@ -26,3 +26,9 @@ public class ExecutorServiceExample {
         executorService.shutdown();
     }
 }
+
+/*
+output:
+Task 1 executed.
+Result of Callable: 79
+*/

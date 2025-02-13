@@ -8,9 +8,8 @@ public class RemoveDuplicateString {
 
     static String removeDuplicate(String str) {
         StringBuilder output = new StringBuilder();
-        char[] charArr = str.toCharArray();
 
-        for (char c : charArr) {
+        for (char c : str.toCharArray()) {
             if (output.indexOf(String.valueOf(c)) == -1)
                 output.append(c);
         }

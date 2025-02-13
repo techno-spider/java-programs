@@ -1,9 +1,10 @@
 package threading;
 
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 
 public class CompletableFutureExample {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         System.out.println("Starting application...");
 
@@ -30,6 +31,11 @@ public class CompletableFutureExample {
         // wait for all task to complete
         saveUser.join();
 
+        // handling exception in completable future
+        CompletableFuture<Integer> resultFuture = CompletableFuture.supplyAsync(() -> 10 / 0)
+                                                                   .exceptionally(ex -> 55);
+        System.out.println("Exception Result: " + resultFuture.get());
+
         System.out.println("Application finished");
     }
 
@@ -50,5 +56,6 @@ public class CompletableFutureExample {
  * Fetched user data from API
  * Processing user data...
  * Saving processed user data: JAMES BOND
+ * Exception Result: 55
  * Application finished
  */

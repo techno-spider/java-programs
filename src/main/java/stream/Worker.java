@@ -67,5 +67,8 @@ public class Worker {
                                                          + ", Worker with max salary: "
                                                          + value));
         });
+
+        // top 3 highest salaries for each department
+
     }
 }

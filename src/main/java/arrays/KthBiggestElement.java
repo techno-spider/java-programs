@@ -22,5 +22,5 @@ public class KthBiggestElement {
 
 /*
  * output:
- * The 3th biggest element is: 26
+ * The 3rd biggest element is: 26
  */

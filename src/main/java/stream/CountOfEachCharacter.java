@@ -9,21 +9,29 @@ public class CountOfEachCharacter {
 
         String text = "Hello, World!";
         String sentence = "Java programming language";
+        String str = "coconut";
 
         // approach 1
         System.out.println("Approach 1:");
-        text.chars()
-                .filter(ch -> ch != ' ' && ch != ',')
-                .mapToObj(ch -> (char) ch)
-                .collect(Collectors.groupingBy(str -> str, Collectors.counting()))
-                .forEach((c, count) -> System.out.println("Character: " + c + ", Count: " + count));
+        str.chars()
+           .mapToObj(ch -> (char) ch)
+           .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+           .forEach((c, count) -> System.out.println(c + " : " + count));
 
         // approach 2
         System.out.println("Approach 2:");
+        text.chars()
+            .filter(ch -> ch != ' ' && ch != ',')
+            .mapToObj(ch -> (char) ch)
+            .collect(Collectors.groupingBy(s -> s, Collectors.counting()))
+            .forEach((c, count) -> System.out.println("Character: " + c + ", Count: " + count));
+
+        // approach 3
+        System.out.println("Approach 3:");
         Map<Character, Long> charCount = sentence.chars()
-                .filter(ch -> ch != ' ')
-                .mapToObj(c -> (char) c)
-                .collect(Collectors.toMap(Function.identity(), c -> 1L, Long::sum));
+                                                 .filter(ch -> ch != ' ')
+                                                 .mapToObj(c -> (char) c)
+                                                 .collect(Collectors.toMap(Function.identity(), c -> 1L, Long::sum));
         charCount.forEach((ch, co) -> System.out.println(ch + " : " + co));
     }
 }
@@ -31,6 +39,12 @@ public class CountOfEachCharacter {
 /*
  * output:
  * Approach 1:
+ * c : 2
+ * t : 1
+ * u : 1
+ * n : 1
+ * o : 2
+ * Approach 2:
  * Character: H, Count: 1
  * Character: e, Count: 1
  * Character: l, Count: 3
@@ -39,7 +53,7 @@ public class CountOfEachCharacter {
  * Character: r, Count: 1
  * Character: d, Count: 1
  * Character: !, Count: 1
- * Approach 2:
+ * Approach 3:
  * p : 1
  * a : 5
  * r : 2
