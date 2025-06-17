@@ -9,7 +9,7 @@ public class StringCompression {
     }
 
     private static String compressString(String str) {
-        if (str == null || str.isEmpty() || str.isBlank()) {
+        if (str == null || str.isBlank()) {
             return str;
         }
         StringBuilder compressed = new StringBuilder();

@@ -5,9 +5,10 @@ import java.util.HashSet;
 public class IsogramChecker {
     public static void main(String[] args) {
 
+        // check string has all unique character
         String str = "spring";
         String str1 = "AbcD";
-        String str2 = "java";
+        String str2 = "jAva";
         System.out.println(str + " : " + isIsogramStream(str));
         System.out.println(str1 + " : " + isIsogram(str1));
         System.out.println(str2 + " : " + isIsogram(str2));
@@ -16,9 +17,9 @@ public class IsogramChecker {
 
     static boolean isIsogramStream(final String str) {
         return str.chars()
-                .filter(Character::isAlphabetic)
-                .map(Character::toLowerCase)
-                .allMatch(new HashSet<>()::add);
+                  .filter(Character::isAlphabetic)
+                  .map(Character::toLowerCase)
+                  .allMatch(new HashSet<>()::add);
     }
 
     public static boolean isIsogram(String str) {

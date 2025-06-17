@@ -36,3 +36,9 @@ public class AtomicCounter {
         System.out.println("Final value: " + ac.getCounter());
     }
 }
+
+
+/*
+ * output:
+ * Final value: 2000
+ * */

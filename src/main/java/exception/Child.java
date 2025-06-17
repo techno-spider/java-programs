@@ -11,3 +11,8 @@ public class Child extends Parent {
         c.share();
     }
 }
+
+/*
+Parent class is throwing IOException
+Child share
+* */

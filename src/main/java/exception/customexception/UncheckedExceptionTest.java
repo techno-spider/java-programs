@@ -19,3 +19,9 @@ public class UncheckedExceptionTest {
         }
     }
 }
+
+/*
+ * output:
+ * Caught Exception: Input cannot be null or empty
+ * Finally block executed
+ * */

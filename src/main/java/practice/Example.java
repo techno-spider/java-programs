@@ -1,26 +1,30 @@
 package practice;
 
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
 
 public class Example {
     public static void main(String[] args) {
 
-        TreeMap<Integer, String> treeMap = new TreeMap<>();
+        List<String> names = Arrays.asList("Rohit",
+                                           "Virat",
+                                           null,
+                                           "Surya",
+                                           null,
+                                           "Bumrah",
+                                           "Hardik",
+                                           null,
+                                           "Shubman",
+                                           "Rahul");
 
+        List<String> list = names.stream()
+                                 .flatMap(Stream::ofNullable)
+                                 .toList();
+       // System.out.println(list);
 
-        treeMap.put(42, "forty two");
-        treeMap.put(29, "twenty nine");
-        treeMap.put(13, "thirteen");
-        treeMap.put(90, "ninety");
-        treeMap.put(57, "fifty seven");
-        treeMap.put(10, "ten");
-        treeMap.put(25, "twenty five");
-        treeMap.put(37, "thirty seven");
-        treeMap.put(22, "twenty two");
-        treeMap.put(51, "fifty one");
-
-        for (Map.Entry<Integer, String> entry : treeMap.entrySet())
-            System.out.println(entry.getKey() + ": " + entry.getValue());
+        Stream.iterate(1, n -> n + 2)
+              .limit(10)
+              .forEach(System.out::println);
     }
 }

@@ -17,7 +17,7 @@ public class Demo {
                                                                          Collectors.counting()));
         //System.out.println(collect);
 
-        // find duplicate elements
+        // duplicate characters count
         List<Map.Entry<String, Long>> list = Arrays.stream(str.split(""))
                                                    .collect(Collectors.groupingBy(Function.identity(),
                                                                                   Collectors.counting()))
@@ -25,7 +25,7 @@ public class Demo {
                                                    .stream()
                                                    .filter(x -> x.getValue() > 1L)
                                                    .toList();
-        //System.out.println(list);
+        System.out.println(list);
 
         // first non-repeated character
         Character firstNonRepeatedChar = str.chars()
@@ -39,6 +39,6 @@ public class Demo {
                                             .map(Map.Entry::getKey)
                                             .findFirst()
                                             .orElseThrow();
-        System.out.println(firstNonRepeatedChar);
+        //System.out.println(firstNonRepeatedChar);
     }
 }

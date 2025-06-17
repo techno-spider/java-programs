@@ -19,3 +19,7 @@ public class TrickyException {
         System.out.println(i);
     }
 }
+
+/*
+output: 30
+*/

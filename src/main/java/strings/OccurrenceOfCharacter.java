@@ -23,3 +23,10 @@ public class OccurrenceOfCharacter {
         }
     }
 }
+
+/*
+p : 1
+a : 1
+i : 1
+z : 2
+*/

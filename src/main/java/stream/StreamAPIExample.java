@@ -7,26 +7,26 @@ import java.util.stream.Collectors;
 
 public class StreamAPIExample {
 
-    static ArrayList<Emp> employeeList = new ArrayList<Emp>();
+    static ArrayList<Emp> employees = new ArrayList<Emp>();
 
     public static void main(String[] args) {
 
-        employeeList.add(new Emp(199, "Amelia Joe", 24, "Female", "Sales And Marketing", 2016, 11500.0));
-        employeeList.add(new Emp(200, "Jaden Dough", 38, "Male", "Security And Transport", 2016, 11000.5));
-        employeeList.add(new Emp(211, "Jasna Kaur", 27, "Female", "Infrastructure", 2014, 15700.0));
-        employeeList.add(new Emp(222, "Nitin Joshi", 25, "Male", "Product Development", 2016, 28200.0));
-        employeeList.add(new Emp(233, "Jyothi Reddy", 27, "Female", "Account And Finance", 2013, 21300.0));
-        employeeList.add(new Emp(244, "Nicolus Den", 24, "Male", "Sales And Marketing", 2017, 10700.0));
-        employeeList.add(new Emp(255, "Alia Baig", 23, "Male", "Infrastructure", 2018, 12700.0));
-        employeeList.add(new Emp(266, "Sanvi Pandey", 26, "Female", "Product Development", 2015, 28900.0));
-        employeeList.add(new Emp(277, "Amelia Joe", 31, "Male", "Product Development", 2012, 35700.0));
+        employees.add(new Emp(199, "Amelia Joe", 24, "Female", "Sales And Marketing", 2016, 11500.0));
+        employees.add(new Emp(200, "Jaden Dough", 38, "Male", "Security And Transport", 2016, 11000.5));
+        employees.add(new Emp(211, "Jasna Kaur", 27, "Female", "Infrastructure", 2014, 15700.0));
+        employees.add(new Emp(222, "Nitin Joshi", 25, "Male", "Product Development", 2016, 28200.0));
+        employees.add(new Emp(233, "Jyothi Reddy", 27, "Female", "Account And Finance", 2013, 21300.0));
+        employees.add(new Emp(244, "Nicolus Den", 24, "Male", "Sales And Marketing", 2017, 10700.0));
+        employees.add(new Emp(255, "Alia Baig", 23, "Male", "Infrastructure", 2018, 12700.0));
+        employees.add(new Emp(266, "Sanvi Pandey", 26, "Female", "Product Development", 2015, 28900.0));
+        employees.add(new Emp(277, "Amelia Joe", 31, "Male", "Product Development", 2012, 35700.0));
 
         // How many male and female employees are there in the organization
         method1();
         System.out.println("\n");
 
         // Print the name of all departments
-//		method2();
+		//method2();
         System.out.println("\n");
 
         // What is the average age of female and male employees
@@ -91,8 +91,8 @@ public class StreamAPIExample {
     private static void method1() {
         System.out.println("male and female employees in the organization");
 
-        Map<String, Long> collect = employeeList.stream()
-                                                .collect(Collectors.groupingBy(Emp::getGender, Collectors.counting()));
+        Map<String, Long> collect = employees.stream()
+                                             .collect(Collectors.groupingBy(Emp::getGender, Collectors.counting()));
         System.out.println(collect);
     }
 
